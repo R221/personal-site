@@ -8,7 +8,8 @@
     "build:ssr": "ng run personal_site:server:dev",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -32,7 +33,10 @@
     "rxjs": "^6.6.3",
     "ts-node": "~8.4.1",
     "tslint": "~5.20.0",
-    "zone.js": "0.9.1"
+    "zone.js": "0.9.1",
+    "@angular/cli": "^8.3.29",
+    "@angular/compiler-cli": "^8.2.14",
+    "typescript": "3.5.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.29",
@@ -62,5 +66,9 @@
   "resolutions": {
     "url-parse": ">=1.5.0",
     "lodash": ">=4.17.21"
+  }
+  "engines": {
+    "node": "14.18.1",
+    "npm": "8.1.1"
   }
 }
