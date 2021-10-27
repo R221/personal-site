@@ -1,5 +1,5 @@
 {
-  "name": "robertjames",
+  "name": "personal_site",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "build:ssr": "ng run personal_site:server:dev",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
     "heroku-postbuiild": "ng build --output-path dist"
   },
   "private": true,
