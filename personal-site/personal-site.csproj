@@ -31,12 +31,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\package-lock.json" />
+    <None Remove="ClientApp\package.json" />
     <None Remove="ClientApp\src\app\projects\_ViewStart.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="package-lock.json" />
-    <None Include="package.json" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
