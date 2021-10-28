@@ -16,7 +16,6 @@ const path = require('path');
 const express = require('express');
 const dotenv = require('dotenv');
 const app = express();
-const mongoose = require('mongoose');
 
 //Process environment variables
 dotenv.config();
