@@ -14,21 +14,8 @@ var allowedExt = [
 //Require modules
 const path = require('path');
 const express = require('express');
-const dotenv = require('dotenv');
 const app = express();
-const mongoose = require('mongoose');
 
-//Process environment variables
-dotenv.config();
-
-const mongoConnectionString = process.env.MONGODB_URI || "mongodb://localhost:27017/test";
-
-//Connect to db
-mongoose.connect(mongoConnectionString, {
-  useNewUrlParser: true
-}, () => {
-  console.log('Connected to db!');
-});
 
 //General middlewares
 app.use(express.json());
